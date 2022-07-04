@@ -22,6 +22,7 @@ public class RegistrationFormTests extends TestBase {
                 .setState(STATE)
                 .setCity(CITY)
                 .pressSubmit()
+                .checkTitleResult()
                 .checkResult("Student Name", FIRSTNAME + " " + LASTNAME)
                 .checkResult("Student Email", EMAIL)
                 .checkResult("Gender", GENDER)
