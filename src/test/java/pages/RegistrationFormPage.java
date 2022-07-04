@@ -108,7 +108,6 @@ public class RegistrationFormPage {
     }
 
     public RegistrationFormPage checkResult(String key, String value) {
-        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         resultTableComponent.checkResult(key, value);
         return this;
     }
